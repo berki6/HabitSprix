@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "HabitSprix",
-    "slug": "HabitSprix",
+    "slug": "habit-sprix",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -43,6 +43,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "92ca23b2-7dc4-41e3-82c7-d08f72b38725"
+      }
+    },
+    "owner": "berki"
   }
 }
