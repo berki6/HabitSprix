@@ -151,7 +151,7 @@ export default function Index() {
   const renderRightActions = (habitId: string) => (
     <View style={styles.swipeActionRight}>
       {isHabitCompleted(habitId) ? (
-        <Text style={{ color: "#fff" }}> Completed!</Text>
+        <Text style={{ color: "#fff" }}>Completed!</Text>
       ) : (
         <MaterialCommunityIcons
           name="check-circle-outline"
@@ -186,7 +186,6 @@ export default function Index() {
       <ScrollView showsVerticalScrollIndicator={false}>
         {habits?.length === 0 ? (
           <View style={styles.emptyState}>
-            {" "}
             <Text style={styles.emptyStateText}>
               No Habits yet. Add your first Habit!
             </Text>
@@ -220,9 +219,8 @@ export default function Index() {
                 elevation={0}
               >
                 <View style={styles.cardContent}>
-                  <Text style={styles.cardTitle}> {habit.title}</Text>
+                  <Text style={styles.cardTitle}>{habit.title}</Text>
                   <Text style={styles.cardDescription}>
-                    {" "}
                     {habit.description}
                   </Text>
                   <View style={styles.cardFooter}>
@@ -238,7 +236,6 @@ export default function Index() {
                     </View>
                     <View style={styles.frequencyBadge}>
                       <Text style={styles.frequencyText}>
-                        {" "}
                         {habit.frequency.charAt(0).toUpperCase() +
                           habit.frequency.slice(1)}
                       </Text>
